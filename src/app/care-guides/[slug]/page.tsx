@@ -46,10 +46,10 @@ const careItems = [
 const guideImages: Record<string, string> = {
   alocasia: "https://images.unsplash.com/photo-1766139443607-ea1782ce245a?q=80&w=1200&auto=format&fit=crop",
   anthurium: "https://images.unsplash.com/photo-1637967886160-fd78dc3ce3f5?q=80&w=1200&auto=format&fit=crop",
-  begonia: "https://images.unsplash.com/photo-1611211232932-da3113c5b960?q=80&w=1200&auto=format&fit=crop",
+  begonia: "/images/begonia.jpg",
   philodendron: "https://images.unsplash.com/photo-1598880940080-ff9a29891b85?q=80&w=1200&auto=format&fit=crop",
   monstera: "https://images.unsplash.com/photo-1614594975525-e45190c55d0b?q=80&w=1200&auto=format&fit=crop",
-  hoya: "https://images.unsplash.com/photo-1602923668104-8f9e03e77e62?q=80&w=1200&auto=format&fit=crop",
+  hoya: "/images/hoya.jpg",
   syngonium: "https://images.unsplash.com/photo-1543805926-214b3603a158?q=80&w=1200&auto=format&fit=crop",
   calathea: "https://images.unsplash.com/photo-1597306200021-f8e16b12fb45?q=80&w=1200&auto=format&fit=crop",
   pothos: "https://images.unsplash.com/photo-1534726955665-2cb2d145f2ad?q=80&w=1200&auto=format&fit=crop",

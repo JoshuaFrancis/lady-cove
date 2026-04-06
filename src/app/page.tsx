@@ -37,7 +37,7 @@ export default function HomePage() {
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
             <div className="h-[400px]">
               <DestinationCard
-                imageUrl="https://images.unsplash.com/photo-1637967886160-fd78dc3ce3f5?q=80&w=800&auto=format&fit=crop"
+                imageUrl="/images/aroids.jpg"
                 location="Aroids"
                 flag=""
                 stats="Anthurium, Philodendron, Alocasia, Monstera & more"
@@ -47,7 +47,7 @@ export default function HomePage() {
             </div>
             <div className="h-[400px]">
               <DestinationCard
-                imageUrl="https://images.unsplash.com/photo-1611211232932-da3113c5b960?q=80&w=800&auto=format&fit=crop"
+                imageUrl="/images/begonia.jpg"
                 location="Begonias"
                 flag=""
                 stats="Rex, cane, rhizomatous & rare species"
@@ -57,7 +57,7 @@ export default function HomePage() {
             </div>
             <div className="h-[400px]">
               <DestinationCard
-                imageUrl="https://images.unsplash.com/photo-1602923668104-8f9e03e77e62?q=80&w=800&auto=format&fit=crop"
+                imageUrl="/images/hoya.jpg"
                 location="Hoyas"
                 flag=""
                 stats="Trailing, climbing & compact wax plants"
