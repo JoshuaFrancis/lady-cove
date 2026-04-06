@@ -31,7 +31,7 @@ Follow us on Palmstreet and turn on notifications so you never miss a stream. We
           {
             title: "See Every Plant Up Close",
             description:
-              "We show each plant on camera from multiple angles. You see exactly what you're buying — no stock photos, no surprises.",
+              "We show each plant on camera from multiple angles. You see exactly what you're buying. No stock photos, no surprises.",
             icon: "eye",
           },
           {

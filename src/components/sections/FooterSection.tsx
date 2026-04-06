@@ -33,7 +33,7 @@ export function FooterSection({ columns, copyright }: FooterSectionProps) {
       <div className="relative mx-auto max-w-7xl px-6 lg:px-8 pt-16 pb-12">
         {/* Brand section */}
         <div className="mb-12 max-w-sm">
-          <h2 className="text-2xl font-bold font-[family-name:var(--font-space-grotesk)]">
+          <h2 className="text-2xl font-bold font-[family-name:var(--font-dm-sans)]">
             The Lady Cove
           </h2>
           <p className="mt-3 text-sm text-white/60 leading-6">

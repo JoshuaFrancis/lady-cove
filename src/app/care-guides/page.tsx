@@ -1,13 +1,7 @@
 import type { Metadata } from "next";
-import Link from "next/link";
 import { careGuides } from "@/data/care-guides";
 import { HeroSection, CTASection } from "@/components/sections";
-import {
-  Leaf, Heart, Flower2, TreePine, Mountain, Sun,
-  ArrowUpRight, Droplets, Zap, Sparkle, MoveUp,
-  GitBranch, CloudRain, Palette, Home, Wind, CircleDot,
-  type LucideIcon,
-} from "lucide-react";
+import { DestinationCard } from "@/components/ui/card-21";
 
 export const metadata: Metadata = {
   title: "Plant Care Guides",
@@ -15,22 +9,45 @@ export const metadata: Metadata = {
     "Expert care guides for rare tropical houseplants. Detailed instructions for Alocasia, Anthurium, Begonia, Philodendron, Monstera, Hoya, and more from a certified Florida nursery.",
 };
 
-const iconMap: Record<string, LucideIcon> = {
-  leaf: Leaf, heart: Heart, "flower-2": Flower2, "tree-pine": TreePine,
-  mountain: Mountain, sun: Sun, "arrow-up-right": ArrowUpRight,
-  droplets: Droplets, zap: Zap, sparkle: Sparkle, "move-up": MoveUp,
-  "git-branch": GitBranch, "cloud-rain": CloudRain, palette: Palette,
-  home: Home, wind: Wind, "circle-dot": CircleDot,
+const guideImages: Record<string, string> = {
+  alocasia: "https://images.unsplash.com/photo-1632321926816-94b42e4acee6?q=80&w=800&auto=format&fit=crop",
+  anthurium: "https://images.unsplash.com/photo-1637967886160-fd78dc3ce3f5?q=80&w=800&auto=format&fit=crop",
+  begonia: "https://images.unsplash.com/photo-1611211232932-da3113c5b960?q=80&w=800&auto=format&fit=crop",
+  philodendron: "https://images.unsplash.com/photo-1598880940080-ff9a29891b85?q=80&w=800&auto=format&fit=crop",
+  monstera: "https://images.unsplash.com/photo-1614594975525-e45190c55d0b?q=80&w=800&auto=format&fit=crop",
+  hoya: "https://images.unsplash.com/photo-1602923668104-8f9e03e77e62?q=80&w=800&auto=format&fit=crop",
+  syngonium: "https://images.unsplash.com/photo-1597055181300-b7e5e5e1318d?q=80&w=800&auto=format&fit=crop",
+  calathea: "https://images.unsplash.com/photo-1637037803820-26756f4fa8ac?q=80&w=800&auto=format&fit=crop",
+  pothos: "https://images.unsplash.com/photo-1572688484438-313a56e6dc34?q=80&w=800&auto=format&fit=crop",
+  scindapsus: "https://images.unsplash.com/photo-1620127252536-03bdfcb3c1b7?q=80&w=800&auto=format&fit=crop",
+  rhaphidophora: "https://images.unsplash.com/photo-1620127252536-03bdfcb3c1b7?q=80&w=800&auto=format&fit=crop",
+  epipremnum: "https://images.unsplash.com/photo-1572688484438-313a56e6dc34?q=80&w=800&auto=format&fit=crop",
+  colocasia: "https://images.unsplash.com/photo-1509423350716-97f9360b4e09?q=80&w=800&auto=format&fit=crop",
+  caladium: "https://images.unsplash.com/photo-1509423350716-97f9360b4e09?q=80&w=800&auto=format&fit=crop",
+  aglaonema: "https://images.unsplash.com/photo-1620127252536-03bdfcb3c1b7?q=80&w=800&auto=format&fit=crop",
+  fern: "https://images.unsplash.com/photo-1459411552884-841db9b3cc2a?q=80&w=800&auto=format&fit=crop",
+  peperomia: "https://images.unsplash.com/photo-1597055181300-b7e5e5e1318d?q=80&w=800&auto=format&fit=crop",
 };
 
-const gradients = [
-  "from-emerald-500/15 to-emerald-500/5",
-  "from-teal-500/15 to-teal-500/5",
-  "from-green-600/15 to-green-600/5",
-  "from-primary/15 to-primary/5",
-  "from-cyan-600/15 to-cyan-600/5",
-  "from-lime-500/15 to-lime-500/5",
-];
+const guideColors: Record<string, string> = {
+  alocasia: "142 40% 22%",
+  anthurium: "0 50% 35%",
+  begonia: "330 40% 30%",
+  philodendron: "150 45% 25%",
+  monstera: "145 50% 28%",
+  hoya: "30 40% 30%",
+  syngonium: "160 35% 25%",
+  calathea: "155 45% 22%",
+  pothos: "130 50% 28%",
+  scindapsus: "170 35% 25%",
+  rhaphidophora: "140 40% 24%",
+  epipremnum: "135 45% 26%",
+  colocasia: "120 40% 22%",
+  caladium: "350 45% 30%",
+  aglaonema: "148 38% 24%",
+  fern: "138 50% 20%",
+  peperomia: "155 30% 28%",
+};
 
 export default function CareGuidesPage() {
   return (
@@ -54,38 +71,19 @@ export default function CareGuidesPage() {
               light, water, humidity, soil, fertilizer, pests, and more.
             </p>
           </div>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-            {careGuides.map((guide, index) => {
-              const Icon = iconMap[guide.icon] || Leaf;
-              const gradient = gradients[index % gradients.length];
-              return (
-                <Link
-                  key={guide.slug}
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+            {careGuides.map((guide) => (
+              <div key={guide.slug} className="h-[380px]">
+                <DestinationCard
+                  imageUrl={guideImages[guide.slug] || "https://images.unsplash.com/photo-1459411552884-841db9b3cc2a?q=80&w=800&auto=format&fit=crop"}
+                  location={guide.name}
+                  flag=""
+                  stats={guide.description.slice(0, 60) + "..."}
                   href={`/care-guides/${guide.slug}`}
-                  className="group rounded-2xl overflow-hidden border border-border bg-background transition-all hover:shadow-xl hover:-translate-y-1"
-                >
-                  {/* Visual header */}
-                  <div className={`h-28 bg-gradient-to-br ${gradient} relative overflow-hidden`}>
-                    <div className="absolute inset-0 flex items-center justify-center">
-                      <Icon className="h-14 w-14 text-primary/30 group-hover:text-primary/50 transition-colors" />
-                    </div>
-                    <div className="absolute -top-3 -right-3 w-16 h-16 rounded-full border border-primary/10" />
-                    <div className="absolute -bottom-2 -left-2 w-10 h-10 rounded-full border border-primary/10" />
-                  </div>
-                  <div className="p-6">
-                    <h3 className="text-lg font-semibold text-foreground group-hover:text-primary transition-colors">
-                      {guide.name}
-                    </h3>
-                    <p className="mt-2 text-sm leading-6 text-muted-foreground line-clamp-2">
-                      {guide.description}
-                    </p>
-                    <span className="mt-4 inline-block text-sm font-medium text-primary">
-                      Read care guide &rarr;
-                    </span>
-                  </div>
-                </Link>
-              );
-            })}
+                  themeColor={guideColors[guide.slug] || "142 40% 25%"}
+                />
+              </div>
+            ))}
           </div>
         </div>
       </section>

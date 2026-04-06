@@ -1,4 +1,4 @@
-import { Inter, Space_Grotesk } from "next/font/google";
+import { Inter, DM_Sans } from "next/font/google";
 
 export const bodyFont = Inter({
   subsets: ["latin"],
@@ -6,9 +6,9 @@ export const bodyFont = Inter({
   display: "swap",
 });
 
-export const headingFont = Space_Grotesk({
+export const headingFont = DM_Sans({
   subsets: ["latin"],
-  variable: "--font-space-grotesk",
+  variable: "--font-dm-sans",
   display: "swap",
-  weight: ["500", "700"],
+  weight: ["500", "600", "700"],
 });

@@ -19,7 +19,7 @@ export function Navbar() {
     <header className="sticky top-0 z-50 bg-background/80 backdrop-blur-sm border-b border-border">
       <nav className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="flex h-16 items-center justify-between">
-          <Link href="/" className="text-xl font-bold text-foreground font-[family-name:var(--font-space-grotesk)]">
+          <Link href="/" className="text-xl font-bold text-foreground font-[family-name:var(--font-dm-sans)]">
             The Lady Cove
           </Link>
 

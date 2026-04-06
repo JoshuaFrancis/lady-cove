@@ -12,6 +12,18 @@
   --accent: #2c2c2c;
   --accent-foreground: #ffffff;
   --ring: #4a7c59;
+
+  /* DicedHeroSection - Lady Cove themed */
+  --diced-hero-section-top-text: #4a7c59;
+  --diced-hero-section-main-gradient-from: #1B4332;
+  --diced-hero-section-main-gradient-to: #4A7C59;
+  --diced-hero-section-main-gradient-foreground: #1B4332;
+  --diced-hero-section-separator: #4A7C59;
+  --diced-hero-section-sub-text: #6b7280;
+  --diced-hero-section-button-bg: #4A7C59;
+  --diced-hero-section-button-fg: #ffffff;
+  --diced-hero-section-button-hover-bg: #1B4332;
+  --diced-hero-section-button-hover-fg: #ffffff;
 }
 
 @theme inline {
@@ -25,7 +37,7 @@
   --color-accent: var(--accent);
   --color-accent-foreground: var(--accent-foreground);
   --color-ring: var(--ring);
-  --font-heading: var(--font-space-grotesk);
+  --font-heading: var(--font-dm-sans);
   --font-body: var(--font-inter);
 }
 

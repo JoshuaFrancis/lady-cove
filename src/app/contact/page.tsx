@@ -44,7 +44,7 @@ export default function ContactPage() {
 
       <ContentSection
         headline="Before You Reach Out"
-        body={`For the fastest help, check our FAQ page first — we've answered the most common questions about buying, shipping, and plant care there.
+        body={`For the fastest help, check our FAQ page first. We've answered the most common questions about buying, shipping, and plant care there.
 
 If you have a shipping issue or a plant arrived damaged, please contact us within 24 hours of delivery with photos so we can help you quickly.`}
       />

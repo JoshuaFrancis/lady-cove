@@ -7,23 +7,18 @@ import { Truck, ShieldCheck, RotateCcw } from "lucide-react";
 export const metadata: Metadata = {
   title: "Shop",
   description:
-    "Shop The Lady Cove — branded merch, plant care supplies, soil mixes, and more. Cooter Cult hoodies, mugs, stickers, crossbody bags, and premium aroid soil mix.",
+    "Shop The Lady Cove. Cooter Cult hoodies, mugs, stickers, crossbody bags, throw blankets, and more. Rep your favorite plant nursery.",
 };
 
 export default function ShopPage() {
-  const merchProducts = products.filter((p) => p.category === "merch");
-  const supplyProducts = products.filter((p) => p.category === "supplies");
-
   return (
     <>
       <HeroSection
         variant="botanical"
         headline="Shop The Lady Cove"
-        subheadline="Branded merch, plant care supplies, and everything a Cooter Cult member needs. All items ship from our Florida nursery."
-        cta_text="Browse Merch"
-        cta_href="#merch"
-        secondary_cta_text="Plant Supplies"
-        secondary_cta_href="#supplies"
+        subheadline="Branded merch for the Cooter Cult. Hoodies, mugs, bags, blankets, and more, all shipping from Florida."
+        cta_text="Browse Below"
+        cta_href="#products"
       />
 
       {/* Trust bar */}
@@ -44,38 +39,19 @@ export default function ShopPage() {
         </div>
       </section>
 
-      {/* Merch section */}
-      <section id="merch" className="py-24 sm:py-32 px-6 lg:px-8">
+      {/* Products */}
+      <section id="products" className="py-24 sm:py-32 px-6 lg:px-8">
         <div className="mx-auto max-w-7xl">
           <div className="mb-12">
             <h2 className="text-3xl sm:text-4xl font-bold tracking-tight text-foreground">
-              Merch
+              All Products
             </h2>
             <p className="mt-2 text-lg text-muted-foreground">
               Rep the Cooter Cult wherever you go.
             </p>
           </div>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-            {merchProducts.map((product) => (
-              <ProductCard key={product.slug} product={product} />
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Supplies section */}
-      <section id="supplies" className="py-24 sm:py-32 px-6 lg:px-8 bg-muted">
-        <div className="mx-auto max-w-7xl">
-          <div className="mb-12">
-            <h2 className="text-3xl sm:text-4xl font-bold tracking-tight text-foreground">
-              Plant Care Supplies
-            </h2>
-            <p className="mt-2 text-lg text-muted-foreground">
-              The same tools and mixes we use in our nursery.
-            </p>
-          </div>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-            {supplyProducts.map((product) => (
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+            {products.map((product) => (
               <ProductCard key={product.slug} product={product} />
             ))}
           </div>

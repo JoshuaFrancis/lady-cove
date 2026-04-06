@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
-import { HeroSection, FeatureGrid, ContentSection, FAQSection, CTASection } from "@/components/sections";
+import { HeroSection, ContentSection, FAQSection, CTASection } from "@/components/sections";
+import { HowToBuySteps } from "@/components/HowToBuySteps";
 
 export const metadata: Metadata = {
   title: "How to Buy Plants",
@@ -12,47 +13,12 @@ export default function HowToBuyPage() {
     <>
       <HeroSection
         headline="How to Buy Our Plants"
-        subheadline="We sell live on Palmstreet — an app built for plant lovers. Here's everything you need to know to join a stream and take home your next rare find."
+        subheadline="We sell live on Palmstreet, an app built for plant lovers. Here's everything you need to know to join a stream and take home your next rare find."
         cta_text="Download Palmstreet"
         cta_href="https://palmstreet.app/shop/the-lady-cove"
       />
 
-      <FeatureGrid
-        headline="5 Simple Steps"
-        subheadline="From download to delivery, here's how it works."
-        items={[
-          {
-            title: "1. Download Palmstreet",
-            description:
-              "Get the free Palmstreet app on iOS or Android. Create an account and set up your shipping address.",
-            icon: "smartphone",
-          },
-          {
-            title: "2. Follow The Lady Cove",
-            description:
-              'Search for "The Lady Cove" in the app and tap Follow. You\'ll get notified before every livestream.',
-            icon: "user-plus",
-          },
-          {
-            title: "3. Join a Livestream",
-            description:
-              "We go live twice daily. Jump in, say hello, and browse what we're showing. Every plant is displayed on camera so you see exactly what you're getting.",
-            icon: "video",
-          },
-          {
-            title: "4. Claim Your Plant",
-            description:
-              "See something you love? Tap to claim it. Fixed prices and auctions are both available depending on the stream.",
-            icon: "shopping-cart",
-          },
-          {
-            title: "5. We Ship It With Care",
-            description:
-              "Your plant is packed with our signature attention to detail. Heat packs in winter, careful wrapping year-round. From our nursery to your door.",
-            icon: "truck",
-          },
-        ]}
-      />
+      <HowToBuySteps />
 
       <ContentSection
         headline="Our Packing Promise"

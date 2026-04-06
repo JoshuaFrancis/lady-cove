@@ -7,3 +7,4 @@ export { ContentSection } from "./ContentSection";
 export { PricingTable } from "./PricingTable";
 export { FAQSection } from "./FAQSection";
 export { FooterSection } from "./FooterSection";
+export { ReviewsSection } from "./ReviewsSection";
