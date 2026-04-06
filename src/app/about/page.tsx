@@ -21,6 +21,7 @@ export default function AboutPage() {
       <ContentSection
         variant="side-image"
         imagePosition="right"
+        imageUrl="https://images.unsplash.com/photo-1416879595882-3373a0480b5b?q=80&w=800&auto=format&fit=crop"
         headline="How It Started"
         body={`Andie's plant obsession started in a small garden bungalow in San Diego, where every windowsill and shelf became home to another tropical specimen. What began as a hobby quickly turned into something more, propagating, trading, and eventually selling plants to a growing community of collectors.
 
@@ -30,6 +31,7 @@ Matthew, with a background in the Navy, brought structure, logistics, and an unf
       <ContentSection
         variant="side-image"
         imagePosition="left"
+        imageUrl="https://images.unsplash.com/photo-1466692476868-aef1dfb1e735?q=80&w=800&auto=format&fit=crop"
         headline="What We Do Today"
         body={`The Lady Cove is a licensed, certified nursery registered with the Florida Department of Agriculture and a member of the Florida Nursery, Growers & Landscape Association (FNGLA). We specialize in rare aroids, begonias, and hoyas, the kinds of plants that make collectors' hearts race.
 

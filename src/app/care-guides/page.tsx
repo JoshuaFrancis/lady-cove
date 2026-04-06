@@ -19,14 +19,14 @@ const guideImages: Record<string, string> = {
   syngonium: "https://images.unsplash.com/photo-1597055181300-b7e5e5e1318d?q=80&w=800&auto=format&fit=crop",
   calathea: "https://images.unsplash.com/photo-1637037803820-26756f4fa8ac?q=80&w=800&auto=format&fit=crop",
   pothos: "https://images.unsplash.com/photo-1572688484438-313a56e6dc34?q=80&w=800&auto=format&fit=crop",
-  scindapsus: "https://images.unsplash.com/photo-1620127252536-03bdfcb3c1b7?q=80&w=800&auto=format&fit=crop",
-  rhaphidophora: "https://images.unsplash.com/photo-1620127252536-03bdfcb3c1b7?q=80&w=800&auto=format&fit=crop",
-  epipremnum: "https://images.unsplash.com/photo-1572688484438-313a56e6dc34?q=80&w=800&auto=format&fit=crop",
+  scindapsus: "https://images.unsplash.com/photo-1622547748225-3fc4abd2cca0?q=80&w=800&auto=format&fit=crop",
+  rhaphidophora: "https://images.unsplash.com/photo-1585320806297-9794b3e4eeae?q=80&w=800&auto=format&fit=crop",
+  epipremnum: "https://images.unsplash.com/photo-1620803366004-119b57f54cd6?q=80&w=800&auto=format&fit=crop",
   colocasia: "https://images.unsplash.com/photo-1509423350716-97f9360b4e09?q=80&w=800&auto=format&fit=crop",
-  caladium: "https://images.unsplash.com/photo-1509423350716-97f9360b4e09?q=80&w=800&auto=format&fit=crop",
-  aglaonema: "https://images.unsplash.com/photo-1620127252536-03bdfcb3c1b7?q=80&w=800&auto=format&fit=crop",
+  caladium: "https://images.unsplash.com/photo-1510505751526-76e4e58e64a3?q=80&w=800&auto=format&fit=crop",
+  aglaonema: "https://images.unsplash.com/photo-1616690248297-3847fd0a37d4?q=80&w=800&auto=format&fit=crop",
   fern: "https://images.unsplash.com/photo-1459411552884-841db9b3cc2a?q=80&w=800&auto=format&fit=crop",
-  peperomia: "https://images.unsplash.com/photo-1597055181300-b7e5e5e1318d?q=80&w=800&auto=format&fit=crop",
+  peperomia: "https://images.unsplash.com/photo-1463936575829-25148e1db1b8?q=80&w=800&auto=format&fit=crop",
 };
 
 const guideColors: Record<string, string> = {

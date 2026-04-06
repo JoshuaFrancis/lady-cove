@@ -1,51 +1,57 @@
 import * as React from "react";
 import { cn } from "@/lib/utils";
+import { Star } from "lucide-react";
 
 interface TestimonialCardProps {
-  imageUrl: string;
   quote: string;
   author: string;
   role: string;
-  gradientFrom?: string;
-  gradientVia?: string;
-  gradientTo?: string;
+  rating?: number;
   className?: string;
 }
 
 export function TestimonialCard({
-  imageUrl,
   quote,
   author,
   role,
-  gradientFrom = "#4A7C59",
-  gradientVia = "#2D6A4F",
-  gradientTo = "#1B4332",
+  rating = 5,
   className,
 }: TestimonialCardProps) {
   return (
-    <div className={cn("max-w-80 rounded-2xl", className)} style={{ backgroundColor: "#1B4332" }}>
-      <div className="relative -mt-px overflow-hidden rounded-2xl">
-        <img
-          src={imageUrl}
-          alt={author}
-          className="h-[270px] w-full rounded-2xl hover:scale-105 transition-all duration-300 object-cover object-top"
-        />
-        <div
-          className="absolute bottom-0 z-10 h-60 w-full bg-gradient-to-t pointer-events-none to-transparent"
-          style={{
-            backgroundImage: `linear-gradient(to top, #1B4332, transparent)`,
-          }}
-        />
+    <div
+      className={cn(
+        "max-w-80 rounded-2xl p-6 flex flex-col text-white",
+        className
+      )}
+      style={{ backgroundColor: "#1B4332" }}
+    >
+      {/* Star rating */}
+      <div className="flex gap-0.5 mb-4">
+        {[1, 2, 3, 4, 5].map((star) => (
+          <Star
+            key={star}
+            className={`h-4 w-4 ${
+              star <= rating
+                ? "fill-amber-400 text-amber-400"
+                : "fill-white/20 text-white/20"
+            }`}
+          />
+        ))}
       </div>
-      <div className="px-4 pb-4 text-white">
-        <p className="font-medium border-b border-white/20 pb-5">
-          &ldquo;{quote}&rdquo;
-        </p>
-        <p className="mt-4">&mdash; {author}</p>
+
+      {/* Quote */}
+      <p className="font-medium leading-relaxed flex-1">
+        &ldquo;{quote}&rdquo;
+      </p>
+
+      {/* Author */}
+      <div className="mt-5 pt-4 border-t border-white/20">
+        <p className="font-semibold">&mdash; {author}</p>
         <p
-          className="text-sm font-medium bg-clip-text text-transparent"
+          className="text-sm font-medium bg-clip-text text-transparent mt-0.5"
           style={{
-            backgroundImage: `linear-gradient(to right, ${gradientFrom}, ${gradientVia}, ${gradientTo})`,
+            backgroundImage:
+              "linear-gradient(to right, #6DBF8B, #4A7C59, #2D6A4F)",
           }}
         >
           {role}

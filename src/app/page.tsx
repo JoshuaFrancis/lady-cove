@@ -82,13 +82,14 @@ export default function HomePage() {
       <ContentSection
         variant="side-image"
         imagePosition="right"
+        imageUrl="https://images.unsplash.com/photo-1585320806297-9794b3e4eeae?q=80&w=800&auto=format&fit=crop"
         headline="How It Works"
         body={`We sell plants live on Palmstreet, where you can see exactly what you're getting before you buy. No stock photos, no guessing. Every plant is shown on camera, and you pick the one you want.
 
 Download the Palmstreet app, follow The Lady Cove, and join our next livestream. We go live twice daily with fresh inventory, rare finds, and plenty of plant talk along the way.`}
       />
 
-      {/* Testimonials with people images */}
+      {/* Testimonials */}
       <section className="py-24 sm:py-32 px-6 lg:px-8 bg-muted">
         <div className="mx-auto max-w-7xl">
           <div className="mx-auto max-w-2xl text-center mb-16">
@@ -101,31 +102,22 @@ Download the Palmstreet app, follow The Lady Cove, and join our next livestream.
           </div>
           <div className="flex flex-wrap items-start justify-center gap-6">
             <TestimonialCard
-              imageUrl="https://images.unsplash.com/photo-1494790108377-be9c29b29330?q=80&w=600&auto=format&fit=crop"
               quote="I had such a wonderful experience with The Lady Cove Nursery! Fast shipping, amazing plant varieties, and everything arrived healthy and beautiful. Highly recommend!"
               author="Ambyre Roberson"
               role="Facebook Review"
-              gradientFrom="#4A7C59"
-              gradientVia="#6DBF8B"
-              gradientTo="#2D6A4F"
+              rating={5}
             />
             <TestimonialCard
-              imageUrl="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?q=80&w=600&auto=format&fit=crop"
               quote="Absolutely captivating. Shipping was quick, and my plant was very lovingly snuggled in when packed. Will definitely be ordering again."
               author="Sarah M."
               role="Etsy Verified Purchase"
-              gradientFrom="#4A7C59"
-              gradientVia="#6DBF8B"
-              gradientTo="#2D6A4F"
+              rating={5}
             />
             <TestimonialCard
-              imageUrl="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=600&auto=format&fit=crop"
               quote="Beautiful plant. Looks better than the pictures. Packaged well. The plant traveled from Florida to Washington and it's still beautiful."
               author="PlantMom_PNW"
               role="Etsy Verified Purchase"
-              gradientFrom="#4A7C59"
-              gradientVia="#6DBF8B"
-              gradientTo="#2D6A4F"
+              rating={5}
             />
           </div>
         </div>
