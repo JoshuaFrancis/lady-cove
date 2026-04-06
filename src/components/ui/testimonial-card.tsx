@@ -20,7 +20,7 @@ export function TestimonialCard({
   return (
     <div
       className={cn(
-        "max-w-80 rounded-2xl p-6 flex flex-col text-white",
+        "rounded-2xl p-6 flex flex-col text-white h-full",
         className
       )}
       style={{ backgroundColor: "#1B4332" }}

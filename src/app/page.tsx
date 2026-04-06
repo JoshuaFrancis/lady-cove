@@ -100,9 +100,9 @@ Download the Palmstreet app, follow The Lady Cove, and join our next livestream.
               Real reviews from customers across Facebook, Etsy, and Palmstreet
             </p>
           </div>
-          <div className="flex flex-wrap items-start justify-center gap-6">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-4xl mx-auto">
             <TestimonialCard
-              quote="I had such a wonderful experience with The Lady Cove Nursery! Fast shipping, amazing plant varieties, and everything arrived healthy and beautiful. Highly recommend!"
+              quote="Wonderful experience with The Lady Cove! Fast shipping, amazing plant varieties, and everything arrived healthy and beautiful."
               author="Ambyre Roberson"
               role="Facebook Review"
               rating={5}
