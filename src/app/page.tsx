@@ -1,65 +1,134 @@
-import Image from "next/image";
+import {
+  HeroSection,
+  StatsSection,
+  FeatureGrid,
+  ContentSection,
+  TestimonialSection,
+  CTASection,
+} from "@/components/sections";
 
-export default function Home() {
+export default function HomePage() {
   return (
-    <div className="flex flex-col flex-1 items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex flex-1 w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the page.tsx file.
-          </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
-          </p>
-        </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
-            />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
-        </div>
-      </main>
-    </div>
+    <>
+      <HeroSection
+        variant="botanical"
+        headline="Rare Plants, Grown with Love"
+        subheadline="We're a family-owned Florida nursery specializing in aroids, begonias, and hoyas. Join our twice-daily livestreams on Palmstreet to find your next obsession."
+        cta_text="Watch Us Live on Palmstreet"
+        cta_href="https://palmstreet.app/shop/the-lady-cove"
+        secondary_cta_text="Explore Care Guides"
+        secondary_cta_href="/care-guides"
+      />
+
+      <StatsSection
+        items={[
+          { value: "5,966+", label: "Plants Sold" },
+          { value: "7,400+", label: "Community Members" },
+          { value: "17", label: "Care Guides" },
+          { value: "4.8/5", label: "Average Rating" },
+        ]}
+      />
+
+      <FeatureGrid
+        variant="image-cards"
+        headline="What We Grow"
+        subheadline="Our nursery specializes in rare and unusual tropical plants. Each one is hand-selected and lovingly packed."
+        items={[
+          {
+            title: "Aroids",
+            description:
+              "Anthurium, Philodendron, Alocasia, Monstera, and Syngonium. From beginner-friendly to rare collector specimens.",
+            icon: "leaf",
+          },
+          {
+            title: "Begonias",
+            description:
+              "Rex, cane, rhizomatous, and rare species begonias. We propagate varieties you won't find at big box stores.",
+            icon: "flower-2",
+          },
+          {
+            title: "Hoyas",
+            description:
+              "Wax plants in all their glory. Trailing, climbing, and compact varieties with gorgeous blooms.",
+            icon: "heart",
+          },
+          {
+            title: "And More",
+            description:
+              "Calathea, Scindapsus, Peperomia, ferns, and seasonal specialties. There's always something new on stream.",
+            icon: "sparkles",
+          },
+        ]}
+      />
+
+      <ContentSection
+        variant="side-image"
+        imagePosition="right"
+        headline="How It Works"
+        body={`We sell plants live on Palmstreet, where you can see exactly what you're getting before you buy. No stock photos, no guessing. Every plant is shown on camera, and you pick the one you want.
+
+Download the Palmstreet app, follow The Lady Cove, and join our next livestream. We go live twice daily with fresh inventory, rare finds, and plenty of plant talk along the way.`}
+      />
+
+      <TestimonialSection
+        headline="What Our Community Says"
+        items={[
+          {
+            quote:
+              "Absolutely captivating. Shipping was quick, and my plant was very lovingly snuggled in when packed.",
+            author: "Happy Customer",
+            role: "Etsy Buyer",
+            company: "Verified Purchase",
+          },
+          {
+            quote:
+              "Beautiful plant. Looks better than the pictures. Packaged well. The plant traveled from Florida to Washington and it's still beautiful.",
+            author: "Plant Parent",
+            role: "Etsy Buyer",
+            company: "Verified Purchase",
+          },
+          {
+            quote:
+              "Always the best quality and the most careful packaging. The Lady Cove never disappoints.",
+            author: "Repeat Customer",
+            role: "Palmstreet Buyer",
+            company: "Regular Viewer",
+          },
+        ]}
+      />
+
+      <FeatureGrid
+        variant="accent"
+        headline="Monthly Subscription Boxes"
+        subheadline="Get a curated rare plant delivered to your door every month. Three tiers for every level of collector."
+        items={[
+          {
+            title: "Cooter Cult Crate",
+            description:
+              "A rare aroid of the month, care card with QR video guide, branded extras, and a handwritten note from Andie. $49\u201369/month.",
+            icon: "package",
+          },
+          {
+            title: "Begonia of the Month",
+            description:
+              "A specimen-grade begonia with propagation tips and access to our members-only Begonia Lovers community. $39\u201349/month.",
+            icon: "flower",
+          },
+          {
+            title: "Plant Parent Starter",
+            description:
+              "An easy-care plant, soil mix sample, and beginner care module access. Perfect for new plant parents. $24\u201334/month.",
+            icon: "sprout",
+          },
+        ]}
+      />
+
+      <CTASection
+        headline="Ready to Join the Cooter Cult?"
+        subheadline="Follow us on Palmstreet for twice-daily livestreams, or explore our care guides to level up your plant game."
+        cta_text="Download Palmstreet"
+        cta_href="https://palmstreet.app/shop/the-lady-cove"
+      />
+    </>
   );
 }

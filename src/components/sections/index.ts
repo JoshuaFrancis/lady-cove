@@ -1,0 +1,9 @@
+export { HeroSection } from "./HeroSection";
+export { FeatureGrid } from "./FeatureGrid";
+export { StatsSection } from "./StatsSection";
+export { TestimonialSection } from "./TestimonialSection";
+export { CTASection } from "./CTASection";
+export { ContentSection } from "./ContentSection";
+export { PricingTable } from "./PricingTable";
+export { FAQSection } from "./FAQSection";
+export { FooterSection } from "./FooterSection";
