@@ -67,7 +67,7 @@ export default function HomePage() {
             </div>
             <div className="h-[400px]">
               <DestinationCard
-                imageUrl="https://images.unsplash.com/photo-1459411552884-841db9b3cc2a?q=80&w=800&auto=format&fit=crop"
+                imageUrl="/images/and-more.jpg"
                 location="And More"
                 flag=""
                 stats="Calathea, Scindapsus, Peperomia, ferns & specialties"
