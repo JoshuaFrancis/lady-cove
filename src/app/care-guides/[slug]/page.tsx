@@ -44,21 +44,21 @@ const careItems = [
 ] as const;
 
 const guideImages: Record<string, string> = {
-  alocasia: "https://images.unsplash.com/photo-1632321926816-94b42e4acee6?q=80&w=1200&auto=format&fit=crop",
+  alocasia: "https://images.unsplash.com/photo-1766139443607-ea1782ce245a?q=80&w=1200&auto=format&fit=crop",
   anthurium: "https://images.unsplash.com/photo-1637967886160-fd78dc3ce3f5?q=80&w=1200&auto=format&fit=crop",
   begonia: "https://images.unsplash.com/photo-1611211232932-da3113c5b960?q=80&w=1200&auto=format&fit=crop",
   philodendron: "https://images.unsplash.com/photo-1598880940080-ff9a29891b85?q=80&w=1200&auto=format&fit=crop",
   monstera: "https://images.unsplash.com/photo-1614594975525-e45190c55d0b?q=80&w=1200&auto=format&fit=crop",
   hoya: "https://images.unsplash.com/photo-1602923668104-8f9e03e77e62?q=80&w=1200&auto=format&fit=crop",
-  syngonium: "https://images.unsplash.com/photo-1597055181300-b7e5e5e1318d?q=80&w=1200&auto=format&fit=crop",
-  calathea: "https://images.unsplash.com/photo-1637037803820-26756f4fa8ac?q=80&w=1200&auto=format&fit=crop",
-  pothos: "https://images.unsplash.com/photo-1572688484438-313a56e6dc34?q=80&w=1200&auto=format&fit=crop",
+  syngonium: "https://images.unsplash.com/photo-1543805926-214b3603a158?q=80&w=1200&auto=format&fit=crop",
+  calathea: "https://images.unsplash.com/photo-1597306200021-f8e16b12fb45?q=80&w=1200&auto=format&fit=crop",
+  pothos: "https://images.unsplash.com/photo-1534726955665-2cb2d145f2ad?q=80&w=1200&auto=format&fit=crop",
   scindapsus: "https://images.unsplash.com/photo-1622547748225-3fc4abd2cca0?q=80&w=1200&auto=format&fit=crop",
   rhaphidophora: "https://images.unsplash.com/photo-1585320806297-9794b3e4eeae?q=80&w=1200&auto=format&fit=crop",
   epipremnum: "https://images.unsplash.com/photo-1620803366004-119b57f54cd6?q=80&w=1200&auto=format&fit=crop",
   colocasia: "https://images.unsplash.com/photo-1509423350716-97f9360b4e09?q=80&w=1200&auto=format&fit=crop",
-  caladium: "https://images.unsplash.com/photo-1510505751526-76e4e58e64a3?q=80&w=1200&auto=format&fit=crop",
-  aglaonema: "https://images.unsplash.com/photo-1616690248297-3847fd0a37d4?q=80&w=1200&auto=format&fit=crop",
+  caladium: "https://images.unsplash.com/photo-1517174780709-7ea39b5ce33e?q=80&w=1200&auto=format&fit=crop",
+  aglaonema: "https://images.unsplash.com/photo-1525847053749-2bc50678f5a0?q=80&w=1200&auto=format&fit=crop",
   fern: "https://images.unsplash.com/photo-1459411552884-841db9b3cc2a?q=80&w=1200&auto=format&fit=crop",
   peperomia: "https://images.unsplash.com/photo-1463936575829-25148e1db1b8?q=80&w=1200&auto=format&fit=crop",
 };
@@ -91,9 +91,10 @@ export default async function CareGuidePage({ params }: PageProps) {
     <>
       {/* Hero with full-width image */}
       <section className="relative h-[50vh] min-h-[400px] max-h-[500px] overflow-hidden">
-        <div
-          className="absolute inset-0 bg-cover bg-center"
-          style={{ backgroundImage: `url(${heroImage})` }}
+        <img
+          src={heroImage}
+          alt={`${guide.name} plant`}
+          className="absolute inset-0 w-full h-full object-cover"
         />
         <div className="absolute inset-0 bg-gradient-to-t from-[#1B4332] via-[#1B4332]/60 to-transparent" />
         <div className="relative h-full flex flex-col justify-end px-6 lg:px-8 pb-12">

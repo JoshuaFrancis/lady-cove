@@ -27,7 +27,7 @@ export function StatsSection({ headline, items }: StatsSectionProps) {
         <div className="grid grid-cols-2 sm:grid-cols-4 gap-8 sm:gap-12">
           {items.map((item) => (
             <div key={item.label} className="text-center">
-              <div className="text-4xl sm:text-5xl font-bold text-white">
+              <div className={`font-bold text-white ${item.value.length > 6 ? "text-2xl sm:text-3xl" : "text-4xl sm:text-5xl"}`}>
                 {item.value}
               </div>
               <div className="mt-2 text-sm font-medium text-white/70 uppercase tracking-wider">

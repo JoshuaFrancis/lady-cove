@@ -33,10 +33,11 @@ const DestinationCard = React.forwardRef<HTMLDivElement, DestinationCardProps>(
              boxShadow: `0 0 40px -15px hsl(var(--theme-color) / 0.5)`
           }}
         >
-          <div
-            className="absolute inset-0 bg-cover bg-center
+          <img
+            src={imageUrl}
+            alt={location}
+            className="absolute inset-0 w-full h-full object-cover
                        transition-transform duration-500 ease-in-out group-hover:scale-110"
-            style={{ backgroundImage: `url(${imageUrl})` }}
           />
 
           <div
