@@ -58,7 +58,7 @@ export const products: Product[] = [
     price: 19.50,
     description: "Embroidered dad cap with The Lady Cove logo. Adjustable strap, one size fits most. Sun protection for greenhouse visits.",
     category: "merch",
-    image: "https://theladycove.com/cdn/shop/files/classic-dad-hat-white-front-695837023e5e4.jpg?v=1737211650&width=600",
+    image: "https://theladycove.com/cdn/shop/files/classic-dad-hat-white-front-695a911510425.jpg?width=600",
     shopifyUrl: "https://theladycove.com/products/dad-hat",
   },
   {
@@ -67,7 +67,7 @@ export const products: Product[] = [
     price: 3.50,
     description: "Vinyl die-cut sticker with The Lady Cove's 'Movin' Right Along' skeleton design. Weatherproof and UV resistant.",
     category: "merch",
-    image: "https://theladycove.com/cdn/shop/files/kiss-cut-vinyl-decals-5.5x5.5-front-6958478d6e2c2.png?v=1737179021&width=600",
+    image: "https://theladycove.com/cdn/shop/files/kiss-cut-stickers-white-3x3-default-695a8c42a30ce.jpg?width=600",
     shopifyUrl: "https://theladycove.com/products/movin-right-along-sticker",
   },
   {
@@ -76,7 +76,7 @@ export const products: Product[] = [
     price: 19.31,
     description: "'Grow with love' spiral notebook with botanical cover art. Perfect for plant journals, care notes, and wish lists.",
     category: "merch",
-    image: "https://theladycove.com/cdn/shop/files/spiral-notebook-white-front-6958b2a9a1def.jpg?v=1737207464&width=600",
+    image: "https://theladycove.com/cdn/shop/files/spiral-notebook-dotted-front-69582da934cdf.jpg?width=600",
     shopifyUrl: "https://theladycove.com/products/spiral-notebook",
   },
   {
@@ -86,7 +86,7 @@ export const products: Product[] = [
     description: "Cozy throw blanket with the Cooter Cult artwork. Perfect for plant room lounging and livestream watching.",
     category: "merch",
     badge: "New",
-    image: "https://theladycove.com/cdn/shop/files/throw-blanket-50x60-front-69591f8b97e5c.jpg?v=1737235339&width=600",
+    image: "https://theladycove.com/cdn/shop/files/throw-blanket-50x60-front-695883e7d2a42.jpg?width=600",
     shopifyUrl: "https://theladycove.com/products/throw-blanket-cooter-cult",
   },
 ];
