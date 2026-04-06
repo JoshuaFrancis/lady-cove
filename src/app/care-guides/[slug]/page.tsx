@@ -53,7 +53,7 @@ const guideImages: Record<string, string> = {
   syngonium: "https://images.unsplash.com/photo-1543805926-214b3603a158?q=80&w=1200&auto=format&fit=crop",
   calathea: "https://images.unsplash.com/photo-1597306200021-f8e16b12fb45?q=80&w=1200&auto=format&fit=crop",
   pothos: "https://images.unsplash.com/photo-1534726955665-2cb2d145f2ad?q=80&w=1200&auto=format&fit=crop",
-  scindapsus: "https://images.unsplash.com/photo-1622547748225-3fc4abd2cca0?q=80&w=1200&auto=format&fit=crop",
+  scindapsus: "https://images.unsplash.com/photo-1598983062491-5934ce558814?q=80&w=1200&auto=format&fit=crop",
   rhaphidophora: "https://images.unsplash.com/photo-1585320806297-9794b3e4eeae?q=80&w=1200&auto=format&fit=crop",
   epipremnum: "https://images.unsplash.com/photo-1620803366004-119b57f54cd6?q=80&w=1200&auto=format&fit=crop",
   colocasia: "https://images.unsplash.com/photo-1509423350716-97f9360b4e09?q=80&w=1200&auto=format&fit=crop",
