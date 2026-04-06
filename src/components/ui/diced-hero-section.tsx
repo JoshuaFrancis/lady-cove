@@ -97,7 +97,7 @@ export const DicedHeroSection: React.FC<DicedHeroSectionProps> = ({
       style={{
         borderRadius: componentBorderRadius,
         backgroundColor,
-        padding: '2rem',
+        padding: isMobile ? '1rem' : '2rem',
         overflow: 'hidden',
         display: 'flex',
         flexDirection: isMobile ? 'column' : isRTL ? 'row-reverse' : 'row',
@@ -242,9 +242,9 @@ export const DicedHeroSection: React.FC<DicedHeroSectionProps> = ({
           style={{
             display: 'grid',
             gridTemplateColumns: 'repeat(2, 1fr)',
-            gap: '20px',
+            gap: isMobile ? '12px' : '20px',
             width: '100%',
-            aspectRatio: '1 / 1',
+            aspectRatio: isMobile ? 'auto' : '1 / 1',
           }}
         >
           {[slides[3], slides[2], slides[1], slides[0]].map((slide, index) => (
@@ -253,9 +253,9 @@ export const DicedHeroSection: React.FC<DicedHeroSectionProps> = ({
               style={{
                 position: 'relative',
                 width: '100%',
-                paddingBottom: '100%',
+                paddingBottom: isMobile ? '80%' : '100%',
                 overflow: 'hidden',
-                borderRadius: '20px',
+                borderRadius: isMobile ? '12px' : '20px',
               }}
             >
               <img

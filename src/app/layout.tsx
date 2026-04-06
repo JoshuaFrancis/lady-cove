@@ -12,6 +12,31 @@ export const metadata: Metadata = {
   },
   description:
     "The Lady Cove is a family-owned Florida nursery specializing in rare aroids, begonias, and hoyas. Shop live on Palmstreet, explore care guides, or subscribe to monthly plant boxes.",
+  metadataBase: new URL("https://lady-cove.vercel.app"),
+  openGraph: {
+    type: "website",
+    siteName: "The Lady Cove",
+    title: "The Lady Cove | Rare Plants, Live Sales & Expert Care Guides",
+    description:
+      "Family-owned Florida nursery specializing in rare aroids, begonias, and hoyas. Shop live on Palmstreet or subscribe to monthly plant boxes.",
+    images: [
+      {
+        url: "https://images.unsplash.com/photo-1614594975525-e45190c55d0b?q=80&w=1200&auto=format&fit=crop",
+        width: 1200,
+        height: 630,
+        alt: "The Lady Cove - Rare Plants",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "The Lady Cove | Rare Plants, Live Sales & Expert Care Guides",
+    description:
+      "Family-owned Florida nursery specializing in rare aroids, begonias, and hoyas.",
+    images: [
+      "https://images.unsplash.com/photo-1614594975525-e45190c55d0b?q=80&w=1200&auto=format&fit=crop",
+    ],
+  },
 };
 
 const footerColumns = [
